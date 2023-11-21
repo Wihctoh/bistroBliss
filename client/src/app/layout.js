@@ -1,8 +1,9 @@
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.scss";
-import Header from "@/components/header/Header";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
-const dM_Sans = DM_Sans({
+const dmSans = DM_Sans({
     subsets: ["latin"],
     weight: ["400", "500", "700"],
     style: "normal",
@@ -15,20 +16,13 @@ const playfair_Display = Playfair_Display({
     variable: "--font-Playfair_Display",
 });
 
-// export default function RootLayout({ children }) {
-//     return (
-//         <html lang='en'>
-//             <body className={dM_Sans.className}>{children}</body>
-//         </html>
-//     );
-// }
-
 export default function RootLayout({ children }) {
     return (
-        <html lang='en' className={`${dM_Sans.variable} ${playfair_Display.variable}`}>
-            <body>
+        <html lang='en'>
+            <body className={dmSans.className}>
                 <Header />
-                <div>{children}</div>
+                {children}
+                <Footer />
             </body>
         </html>
     );

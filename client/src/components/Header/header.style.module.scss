@@ -1,0 +1,119 @@
+.headerTopContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #474747;
+
+    .headerTop {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 9px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .contactWrapper {
+            display: flex;
+            gap: 25px;
+
+            .headerContacts {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                p {
+                    color: #f9f9f7;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+
+        .headerSocials {
+            display: flex;
+            gap: 4px;
+
+            cursor: pointer;
+        }
+    }
+}
+
+.headerBotContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f9f9f7;
+
+    .headerBot {
+        width: 100%;
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 29px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .titleBlock {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            cursor: pointer;
+
+            h1 {
+                color: #474747;
+                font-family: Playfair_Display;
+                font-size: 42.667px;
+                font-style: italic;
+                font-weight: 600;
+                line-height: 29.333px; /* 68.75% */
+                letter-spacing: -0.4px;
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            p {
+                width: 77px;
+                padding: 4px 0;
+
+                border-radius: 34px;
+                background: #dbdfd0;
+                text-align: center;
+                cursor: pointer;
+
+                color: #2c2f24;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 150% */
+            }
+        }
+
+        .titleBtn {
+            width: 147px;
+            padding: 12px 0;
+
+            text-align: center;
+            border-radius: 118px;
+            border: 1.5px solid #2c2f24;
+            cursor: pointer;
+
+            color: #182226;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+        }
+    }
+}
