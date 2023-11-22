@@ -1,0 +1,118 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #474747;
+
+    .footerWrapper {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 120px 0 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        .footerDesc {
+            max-width: 293px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .footerBlock {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                h2 {
+                    color: #fff;
+                    font-family: Playfair Display;
+                    font-size: 32.67px;
+                    font-style: italic;
+                    font-weight: 600;
+                    line-height: 29.333px; /* 89.787% */
+                    letter-spacing: -0.4px;
+                }
+            }
+
+            p {
+                color: #adb29e;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+            }
+        }
+
+        .footerNav {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 61px 149px;
+            column-gap: 120px;
+
+            color: #dbdfd0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+
+            .footerLinkBlockLeft,
+            .footerLinkBlockRight {
+                align-self: flex-start;
+
+                h2 {
+                    padding-bottom: 20px;
+
+                    color: #fff;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 150% */
+                }
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .footerFoodBlock {
+            max-width: 403px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            h2 {
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px; /* 150% */
+            }
+
+            .footerFood {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                .foodImg {
+                    border-radius: 12px;
+                    background: lightgray 50% / cover no-repeat;
+                }
+            }
+        }
+    }
+
+    .footerAuthor {
+        padding: 130px 0 85px;
+
+        color: #adb29e;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+}
