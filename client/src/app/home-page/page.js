@@ -75,7 +75,12 @@ export default function HomePage() {
         <>
             <div className={style.homePageContainer}>
                 <div className={style.homePageTitle}>
-                    <Image className={style.homeImage} src={homeImage} alt='titleImage'></Image>
+                    <Image
+                        className={style.homeImage}
+                        src={homeImage}
+                        alt='titleImage'
+                        quality={75}
+                    ></Image>
 
                     <div className={style.homePageTitleWrapper}>
                         <div className={style.homePageTitleBlock}>
