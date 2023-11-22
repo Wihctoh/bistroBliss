@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import style from "./header.style.module.scss";
 import phoneImg from "./assets/phone.svg";
@@ -42,13 +43,19 @@ export default function Header() {
             <div className={style.headerBotContainer}>
                 <div className={style.headerBot}>
                     <div className={style.titleBlock}>
-                        <Image src={titleLogo} alt='titleLogo'></Image>
-                        <h1>Bistro Bliss</h1>
+                        <Link href='/home'>
+                            <Image src={titleLogo} alt='titleLogo'></Image>
+                            <h1>Bistro Bliss</h1>
+                        </Link>
                     </div>
 
                     <nav>
-                        <p>Home</p>
-                        <p>About</p>
+                        <p>
+                            <Link href='/home'> Home</Link>
+                        </p>
+                        <p>
+                            <Link href='/about'> About</Link>
+                        </p>
                         <p>Menu</p>
                     </nav>
 
