@@ -1,0 +1,227 @@
+.homePageTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    position: relative;
+
+    .homeImage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .homePageTitleWrapper {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 207px 0 202px;
+
+        .homePageTitleBlock {
+            max-width: 667px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                color: #2c2f24;
+                text-align: center;
+                font-family: Playfair Display;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 96px; /* 96% */
+            }
+
+            p {
+                max-width: 537px;
+                padding-top: 23px;
+
+                color: #2c2f24;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 160% */
+            }
+
+            .homePageMenuBtn {
+                padding-top: 40px;
+
+                display: flex;
+                gap: 16px;
+
+                .bookBtn {
+                    width: 163px;
+                    padding: 20px 0;
+
+                    border-radius: 118px;
+                    background-color: #ad343e;
+                    text-align: center;
+
+                    color: #fff;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 150% */
+                }
+
+                .menuBtn {
+                    width: 163px;
+                    padding: 20px 0;
+
+                    border-radius: 118px;
+                    border: 1.5px solid #2c2f24;
+                    color: #182226;
+                    text-align: center;
+
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
+
+.homePageMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+
+    .homePageMenuWrapper {
+        padding: 92px 0 120px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        h2 {
+            color: #2c2f24;
+            font-family: Playfair Display;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60.5px; /* 110% */
+            text-align: center;
+        }
+        .menuList {
+            display: flex;
+            gap: 24px;
+
+            .menuItem {
+                max-width: 306px;
+                padding: 40px 32px 34px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 12px;
+                border: 1.5px solid #dbdfd0;
+                background: #fff;
+
+                h3 {
+                    margin-top: 30px;
+
+                    color: #2c2f24;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 125% */
+                    letter-spacing: -0.72px;
+                    text-align: center;
+                }
+                p {
+                    margin-top: 15px;
+
+                    color: #414536;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    text-align: center;
+                }
+                .menuLink {
+                    margin-top: 30px;
+
+                    color: #ad343e;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 150% */
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.homePageService {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f9f9f7;
+
+    .homePageServiceWrapper {
+        padding: 120px 0;
+
+        h2 {
+            max-width: 602px;
+
+            color: #2c2f24;
+            font-family: Playfair Display;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60.5px; /* 110% */
+            text-align: left;
+        }
+        .serviceList {
+            margin-top: 64px;
+
+            display: flex;
+            gap: 24px;
+
+            .serviceItem {
+                max-width: 306px;
+
+                display: flex;
+                flex-direction: column;
+
+                .serviceImg {
+                    border-radius: 12px;
+                    background: lightgray 50% / cover no-repeat;
+                }
+
+                h3 {
+                    margin-top: 30px;
+
+                    color: #2c2f24;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 125% */
+                    letter-spacing: -0.72px;
+                }
+                p {
+                    margin-top: 15px;
+
+                    color: #414536;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
