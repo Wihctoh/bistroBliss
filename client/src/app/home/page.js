@@ -73,69 +73,67 @@ export default function HomePage() {
     ];
     return (
         <>
-            <div className={style.homePageContainer}>
-                <div className={style.homePageTitle}>
-                    <Image
-                        className={style.homeImage}
-                        src={homeImage}
-                        alt='titleImage'
-                        quality={75}
-                    ></Image>
+            <div className={style.homePageTitle}>
+                <Image
+                    className={style.homeImage}
+                    src={homeImage}
+                    alt='titleImage'
+                    quality={75}
+                ></Image>
 
-                    <div className={style.homePageTitleWrapper}>
-                        <div className={style.homePageTitleBlock}>
-                            <h1>Best food for your taste</h1>
-                            <p>
-                                Discover delectable cuisine and unforgettable moments in our
-                                welcoming, culinary haven.
-                            </p>
+                <div className={style.homePageTitleWrapper}>
+                    <div className={style.homePageTitleBlock}>
+                        <h1>Best food for your taste</h1>
+                        <p>
+                            Discover delectable cuisine and unforgettable moments in our welcoming,
+                            culinary haven.
+                        </p>
 
-                            <div className={style.homePageMenuBtn}>
-                                <div className={style.bookBtn}>Book A Table</div>
+                        <div className={style.homePageMenuBtn}>
+                            <div className={style.bookBtn}>Book A Table</div>
 
-                                <div className={style.menuBtn}>Explore Menu</div>
+                            <div className={style.menuBtn}>Explore Menu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={style.homePageMenu}>
+                <div className={style.homePageMenuWrapper}>
+                    <h2>Browse Our Menu</h2>
+
+                    <div className={style.menuList}>
+                        {menuList.map((el, i) => (
+                            <div className={style.menuItem} key={i}>
+                                <Image src={el.itemImg} alt={el.itemImgName}></Image>
+
+                                <h3>{el.titleText}</h3>
+                                <p>{el.titleDescription}</p>
+
+                                <p className={style.menuLink}>Explore Menu</p>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
+            </div>
 
-                <div className={style.homePageMenu}>
-                    <div className={style.homePageMenuWrapper}>
-                        <h2>Browse Our Menu</h2>
+            <div className={style.homePageService}>
+                <div className={style.homePageServiceWrapper}>
+                    <h2>We also offer unique services for your events</h2>
 
-                        <div className={style.menuList}>
-                            {menuList.map((el, i) => (
-                                <div className={style.menuItem} key={i}>
-                                    <Image src={el.itemImg} alt={el.itemImgName}></Image>
+                    <div className={style.serviceList}>
+                        {serviceList.map((el, i) => (
+                            <div className={style.serviceItem} key={i}>
+                                <Image
+                                    className={style.serviceImg}
+                                    src={el.serviceImg}
+                                    alt={el.serviceImgName}
+                                ></Image>
 
-                                    <h3>{el.titleText}</h3>
-                                    <p>{el.titleDescription}</p>
-
-                                    <p className={style.menuLink}>Explore Menu</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                <div className={style.homePageService}>
-                    <div className={style.homePageServiceWrapper}>
-                        <h2>We also offer unique services for your events</h2>
-
-                        <div className={style.serviceList}>
-                            {serviceList.map((el, i) => (
-                                <div className={style.serviceItem} key={i}>
-                                    <Image
-                                        className={style.serviceImg}
-                                        src={el.serviceImg}
-                                        alt={el.serviceImgName}
-                                    ></Image>
-
-                                    <h3>{el.titleText}</h3>
-                                    <p>{el.titleDescription}</p>
-                                </div>
-                            ))}
-                        </div>
+                                <h3>{el.titleText}</h3>
+                                <p>{el.titleDescription}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
