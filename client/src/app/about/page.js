@@ -16,6 +16,13 @@ export default function About() {
             description: "837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles",
         },
     ];
+
+    const vegetable = [
+        { h3: "3", p: "Locations" },
+        { h3: "1995", p: "Founded" },
+        { h3: "65+", p: "Staff Members" },
+        { h3: "100%", p: "Satisfied Customers" },
+    ];
     return (
         <>
             <div className={style.aboutContainer}>
@@ -68,7 +75,14 @@ export default function About() {
                                 </p>
                             </div>
 
-                            <div className={style.vegetableStatistic}></div>
+                            <div className={style.vegetableStatistic}>
+                                {vegetable.map((el, index) => (
+                                    <div className={style.vegetableBlock} key={index}>
+                                        <h3>{el.h3}</h3>
+                                        <p>{el.p}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
                         <Image src={vegetableImg} alt='vegetableImg'></Image>
