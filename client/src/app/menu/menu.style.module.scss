@@ -1,0 +1,101 @@
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+
+    .menuWrapper {
+        max-width: 1296px;
+        width: 100%;
+        margin: 65px auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menuTitle {
+            max-width: 557px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            h1 {
+                color: #2c2f24;
+                font-family: Playfair Display;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 96px; /* 96% */
+                text-align: center;
+            }
+            p {
+                color: #495460;
+                font-family: DM Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 155.556% */
+                text-align: center;
+            }
+        }
+    }
+
+    .menuFoodItemsContainer {
+        margin-top: 85px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        .menuFoodItemsBox {
+            max-width: 306px;
+            padding: 0 30px 34px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            border-radius: 12px;
+            border: 1.5px solid #dbdfd0;
+            background: #fff;
+
+            .foodPrice {
+                margin-top: 30px;
+
+                color: #ad343e;
+                font-family: DM Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 125% */
+                letter-spacing: -0.72px;
+                text-align: center;
+            }
+            .foodTitle {
+                margin-top: 15px;
+
+                color: #2c2f24;
+                font-family: DM Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 130% */
+                text-align: center;
+            }
+            .foodDescription {
+                margin-top: 15px;
+
+                color: #414536;
+                font-family: DM Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                text-align: center;
+            }
+        }
+    }
+}

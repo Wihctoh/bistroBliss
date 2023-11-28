@@ -56,7 +56,9 @@ export default function Header() {
                         <p>
                             <Link href='/about'> About</Link>
                         </p>
-                        <p>Menu</p>
+                        <p>
+                            <Link href='/menu'> Menu</Link>
+                        </p>
                     </nav>
 
                     <div className={style.titleBtn}>Book A Table</div>
